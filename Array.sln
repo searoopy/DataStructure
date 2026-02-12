@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36908.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithme", "Algorithme\Algorithme.vcxproj", "{15C65806-4A85-4EDF-B1BA-B9AFBD2F65BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicArray", "DynamicArray\DynamicArray.vcxproj", "{26B971EC-4857-4C53-A9F7-1822FA66CD8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15C65806-4A85-4EDF-B1BA-B9AFBD2F65BA}.Debug|x64.ActiveCfg = Debug|x64
+		{15C65806-4A85-4EDF-B1BA-B9AFBD2F65BA}.Debug|x64.Build.0 = Debug|x64
+		{15C65806-4A85-4EDF-B1BA-B9AFBD2F65BA}.Release|x64.ActiveCfg = Release|x64
+		{15C65806-4A85-4EDF-B1BA-B9AFBD2F65BA}.Release|x64.Build.0 = Release|x64
+		{26B971EC-4857-4C53-A9F7-1822FA66CD8B}.Debug|x64.ActiveCfg = Debug|x64
+		{26B971EC-4857-4C53-A9F7-1822FA66CD8B}.Debug|x64.Build.0 = Debug|x64
+		{26B971EC-4857-4C53-A9F7-1822FA66CD8B}.Release|x64.ActiveCfg = Release|x64
+		{26B971EC-4857-4C53-A9F7-1822FA66CD8B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAA65428-008D-45B3-A91C-3BCC55EEA1E8}
+	EndGlobalSection
+EndGlobal
