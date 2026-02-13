@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicArray", "DynamicArra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.LinkedList", "3.LinkedList\3.LinkedList.vcxproj", "{641B6632-820A-4359-A964-821FBD0F5BE9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoubleLinkedList", "DoubleLinkedList\DoubleLinkedList.vcxproj", "{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -27,6 +29,10 @@ Global
 		{641B6632-820A-4359-A964-821FBD0F5BE9}.Debug|x64.Build.0 = Debug|x64
 		{641B6632-820A-4359-A964-821FBD0F5BE9}.Release|x64.ActiveCfg = Release|x64
 		{641B6632-820A-4359-A964-821FBD0F5BE9}.Release|x64.Build.0 = Release|x64
+		{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}.Debug|x64.ActiveCfg = Debug|x64
+		{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}.Debug|x64.Build.0 = Debug|x64
+		{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}.Release|x64.ActiveCfg = Release|x64
+		{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
