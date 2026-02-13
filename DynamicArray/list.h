@@ -3,11 +3,118 @@
 #include <iostream>
 #include <cassert>
 
+
+//반복자
+template<typename List>
+class ListIterator
+{
+public:
+	//타입 알리아싱 지정
+	//List가 템플릿 파라미터로 넘어오는 경우 typename까지 지정.
+	using ValueType = typename List::ValueType;
+	using PointerType = ValueType*;
+	using ReferenceType = ValueType&;
+
+	ListIterator(PointerType ptr)
+		:ptr(ptr)
+	{
+	}
+
+
+
+
+
+	//연산자 오버로딩
+	//전위 증가 연산자
+	ListIterator& operator++()
+	{
+		++ptr;
+		return *this;
+	}
+
+
+	//연산자 오버로딩
+	//후위 증가 연산자
+	ListIterator& operator++(int)
+	{
+		//현재 반복자를 임시저장.
+		ListIterator iterator = *this;
+
+		//내부 포인터 ++처리.
+		++(*this);
+
+		//앞서 저장했던 반복자 반환.
+		return iterator;
+	}
+
+
+	//연산자 오버로딩
+	//전위 감소 연산자
+	ListIterator& operator--()
+	{
+		--ptr;
+		return *this;
+	}
+
+
+	//연산자 오버로딩
+	//후위 감소 연산자
+	ListIterator& operator--(int)
+	{
+		//현재 반복자를 임시저장.
+		ListIterator iterator = *this;
+
+		//내부 포인터 --처리.
+		--(*this);
+
+		//앞서 저장했던 반복자 반환.
+		return iterator;
+	}
+
+
+	ReferenceType operator[](int index)
+	{
+		return *(ptr + index);
+	}
+
+	PointerType operator->()
+	{
+		return ptr;
+	}
+
+	ReferenceType operator*()
+	{
+		return *ptr;
+	}
+
+	//비교 연산자 오버로딩
+	bool operator==(const ListIterator& other) const
+	{
+		return ptr == other.ptr;
+	}
+
+	//비교 연산자 오버로딩
+	bool operator!=(const ListIterator& other) const
+	{
+		return !(*this == other.ptr);
+	}
+
+
+private:
+	//반복자는 결국 포인터.
+	PointerType ptr = nullptr;
+};
+
 //자동으로 크기가 늘어나는 배열(list/ vector)
 
 template<typename T>
 class List
 {
+public:
+	using ValueType = T;
+	using Iterator = ListIterator< List<T> >;
+
+
 public:
 	List()
 	{
@@ -64,7 +171,8 @@ public:
 	//인덱스 연산자 오버로딩.
 	T& operator[](int index)
 	{
-		assert(index < 0 || index >= size);
+		//assert(index < 0 || index >= size);
+		assert(index >= 0 || index < size);
 
 		return data[index];
 	}
@@ -76,6 +184,22 @@ public:
 
 
 	int Capacity() const { return capacity;  }
+
+
+	//Iterator begin()
+	T* begin()
+	{
+
+		return data;
+		//return Iterator(data);
+	}
+
+	//Iterator end() {
+	T* end()
+	{
+		//return Iterator(data + size);
+		return data + size;
+	}
 
 private:
 	//저장 공간 할당(재할당)하는 함수
@@ -94,7 +218,7 @@ private:
 		}*/
 
 		if (data)
-			memcpy(newBlock, data, sizeof(T) * capacity);
+			memcpy(newBlock, data, sizeof(T) * size);
 
 
 		
