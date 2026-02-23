@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36908.2
@@ -11,7 +10,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.LinkedList", "3.LinkedLis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DoubleLinkedList", "DoubleLinkedList\DoubleLinkedList.vcxproj", "{7CED43C4-4C44-4D31-BDD7-56C6CB70D8B9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{97F3B764-8B55-4A83-9203-A314DEFF7747}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.Stack", "Stack\Stack.vcxproj", "{97F3B764-8B55-4A83-9203-A314DEFF7747}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6.StackMaze", "StackMaze\StackMaze.vcxproj", "{438B79E6-70A0-433B-9A62-3B391E00BA90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7.Queue", "Queue\Queue.vcxproj", "{07326E0D-5F62-4702-81E4-62BD5DFE5397}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8.QueueTwoStacks", "QueueTwoStacks\QueueTwoStacks.vcxproj", "{387518AB-F204-426D-B14C-42A6AE91417F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8.QueueMaze", "8.QueueMaze\8.QueueMaze.vcxproj", "{3053FE7C-7B22-443F-8A9B-A9F8A5C713E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.HashTable", "9.HashTable\9.HashTable.vcxproj", "{E954F0B1-E817-44A7-9FCB-6DFC5EB2B4C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10. Tree", "10. Tree\10. Tree.vcxproj", "{4137770E-EEA0-425C-9665-8F8E74CC56E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11. BinTree", "BinTree\BinTree.vcxproj", "{DE09B07D-80DC-4580-8C57-BF1D2BBE7DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +52,34 @@ Global
 		{97F3B764-8B55-4A83-9203-A314DEFF7747}.Debug|x64.Build.0 = Debug|x64
 		{97F3B764-8B55-4A83-9203-A314DEFF7747}.Release|x64.ActiveCfg = Release|x64
 		{97F3B764-8B55-4A83-9203-A314DEFF7747}.Release|x64.Build.0 = Release|x64
+		{438B79E6-70A0-433B-9A62-3B391E00BA90}.Debug|x64.ActiveCfg = Debug|x64
+		{438B79E6-70A0-433B-9A62-3B391E00BA90}.Debug|x64.Build.0 = Debug|x64
+		{438B79E6-70A0-433B-9A62-3B391E00BA90}.Release|x64.ActiveCfg = Release|x64
+		{438B79E6-70A0-433B-9A62-3B391E00BA90}.Release|x64.Build.0 = Release|x64
+		{07326E0D-5F62-4702-81E4-62BD5DFE5397}.Debug|x64.ActiveCfg = Debug|x64
+		{07326E0D-5F62-4702-81E4-62BD5DFE5397}.Debug|x64.Build.0 = Debug|x64
+		{07326E0D-5F62-4702-81E4-62BD5DFE5397}.Release|x64.ActiveCfg = Release|x64
+		{07326E0D-5F62-4702-81E4-62BD5DFE5397}.Release|x64.Build.0 = Release|x64
+		{387518AB-F204-426D-B14C-42A6AE91417F}.Debug|x64.ActiveCfg = Debug|x64
+		{387518AB-F204-426D-B14C-42A6AE91417F}.Debug|x64.Build.0 = Debug|x64
+		{387518AB-F204-426D-B14C-42A6AE91417F}.Release|x64.ActiveCfg = Release|x64
+		{387518AB-F204-426D-B14C-42A6AE91417F}.Release|x64.Build.0 = Release|x64
+		{3053FE7C-7B22-443F-8A9B-A9F8A5C713E4}.Debug|x64.ActiveCfg = Debug|x64
+		{3053FE7C-7B22-443F-8A9B-A9F8A5C713E4}.Debug|x64.Build.0 = Debug|x64
+		{3053FE7C-7B22-443F-8A9B-A9F8A5C713E4}.Release|x64.ActiveCfg = Release|x64
+		{3053FE7C-7B22-443F-8A9B-A9F8A5C713E4}.Release|x64.Build.0 = Release|x64
+		{E954F0B1-E817-44A7-9FCB-6DFC5EB2B4C8}.Debug|x64.ActiveCfg = Debug|x64
+		{E954F0B1-E817-44A7-9FCB-6DFC5EB2B4C8}.Debug|x64.Build.0 = Debug|x64
+		{E954F0B1-E817-44A7-9FCB-6DFC5EB2B4C8}.Release|x64.ActiveCfg = Release|x64
+		{E954F0B1-E817-44A7-9FCB-6DFC5EB2B4C8}.Release|x64.Build.0 = Release|x64
+		{4137770E-EEA0-425C-9665-8F8E74CC56E1}.Debug|x64.ActiveCfg = Debug|x64
+		{4137770E-EEA0-425C-9665-8F8E74CC56E1}.Debug|x64.Build.0 = Debug|x64
+		{4137770E-EEA0-425C-9665-8F8E74CC56E1}.Release|x64.ActiveCfg = Release|x64
+		{4137770E-EEA0-425C-9665-8F8E74CC56E1}.Release|x64.Build.0 = Release|x64
+		{DE09B07D-80DC-4580-8C57-BF1D2BBE7DCB}.Debug|x64.ActiveCfg = Debug|x64
+		{DE09B07D-80DC-4580-8C57-BF1D2BBE7DCB}.Debug|x64.Build.0 = Debug|x64
+		{DE09B07D-80DC-4580-8C57-BF1D2BBE7DCB}.Release|x64.ActiveCfg = Release|x64
+		{DE09B07D-80DC-4580-8C57-BF1D2BBE7DCB}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

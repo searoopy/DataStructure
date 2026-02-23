@@ -52,7 +52,7 @@ public:
 	//스택이 비었는지 확인.
 	inline bool IsEmpty() const { return top == 0; }
 
-	inline bool IsFull() const { return top >= capacity;  }
+	inline bool IsFull() const { return top >= capacity; }
 
 private:
 	// 스택 비우는 함수.
